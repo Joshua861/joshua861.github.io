@@ -3,108 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
-            rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
         <title>Home</title>
 
-        <style>
-            * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-            body {
-                font-family: monospace;
-                background-color: #1C1C20;
-                color: #fff;
-                margin: 0;
-                padding: 0;
-            }
-            h1 {
-                font-weight: bold;
-                text-align: center;
-                font-size: 3em;
-            }
-            a {
-                color: #fff;
-                font-size: 1.3em;
-                text-decoration: none;
-            }
-            a:hover {
-                transition: .2s;
-                color: #b9e8ff;
-            }
-            li {
-                list-style-type: none;
-                border-top: #fff 1px solid;
-                padding: 10px;
-            }
-            li:hover {
-                background-color: rgba(153, 153, 255, 0.1);
-                transition: .2s;
-            }
-            .bottom {
-                border-bottom: #fff 1px solid;
-            }
-            @media (max-width: 300px) {
-                div {
-                    width: 90%;
-                    margin-left: 5;
-                }
-            }
-            @media (max-width: 500px) and (min-width: 300px) {
-                div {
-                    width: 80%;
-                    margin-left: 10%;
-                }
-            }
-            @media (max-width: 700px) and (min-width: 500px) {
-                div {
-                    width: 70%;
-                    margin-left: 15%;
-                }
-            }
-            @media (max-width: 900px) and (min-width: 700px) {
-                div {
-                width: 50%;
-                margin-left: 25%;
-                }
-            }
-            @media (max-width: 1100px) and (min-width: 900px) {
-                div {
-                width: 40%;
-                margin-left: 30%;
-                }
-            }
-            @media (max-width: 1300px) and (min-width: 1100px) {
-                div {
-                width: 35%;
-                margin-left: 32.5%;
-                }
-            }
-            @media (min-width: 1300px) {
-                div {
-                    width: 30%;
-                    margin-left: 35%;
-                }
-            }
+        <style type="text/tailwindcss" media="screen">
+         li {
+             @apply border-b-2 border-zinc-500/30 list-none p-4 hover:bg-violet-600/10 m-0 transition-all
+         }
+         a {
+             @apply no-underline
+         }
+         body {
+             @apply font-mono
+         }
         </style>
+
     </head>
-    <body>
+    <body class="prose dark:prose-invert mx-auto bg-zinc-100 dark:bg-zinc-900">
         <br><br>
         <div>
-            <h1>Where to?</h1>
+            <h1 class="text-center font-bold">Where to?</h1>
             <br>
             <ul>
                 <a href="https://joshua861.github.io/blog/">
-                    <li>
-                        blog/
-                    </li>
-                </a>
-                <a href="https://Joshua861.github.io/Brynteg-Ordinance">
-                    <li>
-                        brynteg-ordinance/
+                    <li class="border-t-2">
+                        blog/ v1 (hugo)
                     </li>
                 </a>
                 <a href="https://popup-hell.vercel.app">
@@ -113,9 +36,9 @@
                     </li>
                 </a>
                 <a
-                    href="https://joshua861.github.io/debate-topics">
-                    <li class="bottom">
-                        debate-topics/
+                    href="https://partygames.vercel.app">
+                    <li>
+                        party-games/
                     </li>
                 </a>
             </ul>
