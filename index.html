@@ -4,7 +4,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
@@ -16,6 +19,9 @@
         max-width: 30rem;
         margin-left: auto;
         margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
       }
 
       h1 {
@@ -30,18 +36,31 @@
       <h1>My websites</h1>
       <br />
       <div class="buttons">
-        <form action="https://games.joshrl.dev">
-          <input type="submit" value="Games" />
-        </form>
-        <form action="https://notes.joshrl.dev">
-          <input type="submit" value="Notes app" />
-        </form>
-        <form action="https://post.joshrl.dev">
-          <input type="submit" value="Post timeline app" />
-        </form>
-        <form action="https://fb.joshrl.dev">
-          <input type="submit" value="Online notes app" />
-        </form>
+        <a
+          role="button"
+          href="https://games.joshrl.dev"
+          >Games</a
+        >
+        <a
+          role="button"
+          href="https://notes.joshrl.dev"
+          >Offline notes</a
+        >
+        <a
+          role="button"
+          href="https://fb.joshrl.dev"
+          >Online notes</a
+        >
+        <a
+          role="button"
+          href="https://timetable.joshrl.dev"
+          >Classcharts timetable</a
+        >
+        <a
+          role="button"
+          href="https://post.joshrl.dev"
+          >Post timeline (twitter like)</a
+        >
       </div>
     </section>
   </body>
