@@ -2,17 +2,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>My site!</title>
 
-    <style type="text/tailwindcss">
-      .link {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>My site!</title>
+
+  <style type="text/tailwindcss">
+    .link {
         @apply dark:text-blue-400 text-blue-500 underline underline-offset-4 hover:text-blue-400 dark:hover:text-blue-300;
       }
       body {
@@ -25,59 +23,58 @@
         @apply mx-5 sm:mx-12 md:mx-32 lg:mx-48 xl:mx-64;
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <br /><br />
-    <div>
-      <h1 class="font-bold text-4xl">My websites</h1>
-      <p>
-        <br />
-        <a
-          href="https://games.joshrl.dev/"
-          class="link"
-          >Games</a
-        ><br />
-        Some simple games you can mostly play with friends.
-        <br /><br />
-        <a
-          href="https://notes.joshrl.dev/notes"
-          class="link"
-          >Offline notes</a
-        ><br />
-        Simple, offline, markdown, notes app
-        <br /><br />
-        <a
-          href="https://fb.joshrl.dev/"
-          class="link"
-          >Online notes</a
-        ><br />
-        Online notes with sync, sharing, publishing, and more. My first real
-        project using a database and auth.
-        <br /><br />
-        <a
-          href="https://long.joshrl.dev/"
-          class="link"
-          >URL Lengthener</a
-        ><br />
-        Low effort url shortening website (except it makes the urls longer).
-        <br /><br />
-        <a
-          href="https://post.joshrl.dev/"
-          class="link"
-          >Post timeline</a
-        ><br />
-        Like Mastadon, but without any of the features. My first time using a
-        database.
-        <br /><br />
-        <a
-          href="https://ph.joshrl.dev/"
-          class="link"
-          >Placeholder images</a
-        ><br />
-        placehold.co clone.
-      </p>
+<body>
+  <br /><br />
+  <div>
+    <h1 class="font-bold text-4xl">My websites</h1>
+    <p>
+      <br />
+      <a href="https://games.joshrl.dev/" class="link">Games</a><br />
+      Some simple games you can mostly play with friends.
+      <br /><br />
+      <a href="https://notes.joshrl.dev/notes" class="link">Offline notes</a><br />
+      Simple, offline, markdown, notes app
+      <br /><br />
+      <a href="https://fb.joshrl.dev/" class="link">Online notes</a><br />
+      Online notes with sync, sharing, publishing, and more. My first real
+      project using a database and auth.
+      <br /><br />
+      <a href="https://blog.joshrl.dev/" class="link">Blog</a><br />
+      Custom blog site I made in svelte.
+      <br /><br />
+      <a href="https://long.joshrl.dev/" class="link">URL Lengthener</a><br />
+      Low effort url shortening website (except it makes the urls longer).
+      <br /><br />
+      <a href="https://post.joshrl.dev/" class="link">Post timeline</a><br />
+      Like Mastadon, but without any of the features. My first time using a
+      database.
+      <br /><br />
+      <a href="https://ph.joshrl.dev/" class="link">Placeholder images</a><br />
+      placehold.co clone.
+
+      <br><br>
+    <div class="relative flex py-5 items-center">
+      <div class="flex-grow border-t border-gray-400"></div>
+      <span class="flex-shrink mx-4 text-gray-400">Other</span>
+      <div class="flex-grow border-t border-gray-400"></div>
     </div>
+
     <br />
-  </body>
+    <a href="https://popup.joshrl.dev/" class="link">Popup hell</a><br />
+    Quick joke website from forever ago that I never finished. Tons of popups.
+
+    <br /><br>
+    <a href="https://timetable.joshrl.dev/" class="link">Timetable</a><br />
+    Semi-functional timetable app using classcharts api.
+
+    <br /><br>
+    <a href="https://old-notes.joshrl.dev/notes" class="link">Old Notes</a><br />
+    Older version of the offline notes.
+    </p>
+  </div>
+  <br />
+</body>
+
 </html>
